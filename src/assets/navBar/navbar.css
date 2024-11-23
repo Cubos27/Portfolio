@@ -1,0 +1,25 @@
+.button-nav {
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+.button-nav:hover {
+  text-decoration: underline;
+  color: #0046ad;
+}
+
+.selector {
+  background-color: #0046ad;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
