@@ -1,46 +1,33 @@
-import { useState } from "react";
-import "./App.css";
-import RubikCube from "./assets/rubikCube/rubikCube.jsx";
-import Navbar from "./assets/navBar/navbar.jsx";
+import { useState } from 'react';
+import './App.css';
+import RubikCube from './assets/rubikCube/rubikCube.jsx';
+import Navbar from './assets/navBar/navbar.jsx';
+import Home from './assets/mainComponents/home.jsx';
+import Mathle from './assets/mainComponents/Mathle.jsx';
+import MyRoute from './assets/mainComponents/myRoute.jsx';
 
 function App() {
   const [selectorHome, setSelectorHome] = useState(true);
-  const [selectorProjects, setSelectorProjects] = useState(false);
-  const [selectorDescription, setSelectorDescription] = useState(false);
+  const [selectorMyRoute, setSelectorMyRoute] = useState(false);
+  const [selectorMathle, setSelectorMathle] = useState(false);
 
   return (
     <>
       <Navbar
         selectorHome={selectorHome}
         setSelectorHome={setSelectorHome}
-        selectorProjects={selectorProjects}
-        setSelectorProjects={setSelectorProjects}
-        selectorDescription={selectorDescription}
-        setSelectorDescription={setSelectorDescription}
+        selectorMyRoute={selectorMyRoute}
+        setSelectorMyRoute={setSelectorMyRoute}
+        selectorMathle={selectorMathle}
+        setSelectorMathle={setSelectorMathle}
       />
       <RubikCube />
 
-      {selectorHome && (
-        <section>
-          <h2>Welcome</h2>
-          <p>
-            I'm Adriel Andrade, FullStack developer <br /> and I'm ready to make
-            your new amazing wesite
-          </p>
-        </section>
-      )}
+      {selectorHome && <Home />}
 
-      {selectorProjects && (
-        <section>
-          <p>Projects</p>
-        </section>
-      )}
+      {selectorMyRoute && <MyRoute />}
 
-      {selectorDescription && (
-        <section>
-          <p>Description</p>
-        </section>
-      )}
+      {selectorMathle && <Mathle />}
     </>
   );
 }

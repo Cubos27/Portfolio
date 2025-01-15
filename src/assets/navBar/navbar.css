@@ -1,18 +1,23 @@
+.nav {
+  margin: 30px;
+}
+
 .button-nav {
   cursor: pointer;
   display: block;
   border: none;
   background: none;
   font-size: 1rem;
+  color: #bed9e9;
 }
 
 .button-nav:hover {
   text-decoration: underline;
-  color: #0046ad;
+  color: #1c99e1;
 }
 
 .selector {
-  background-color: #0046ad;
+  background-color: #1c99e1;
   height: 8px;
   width: 8px;
   border-radius: 4px;

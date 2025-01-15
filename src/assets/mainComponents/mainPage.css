@@ -1,0 +1,15 @@
+.container {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.description,
+.title {
+  color: #bed9e9;
+}

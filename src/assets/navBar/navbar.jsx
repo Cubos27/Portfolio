@@ -1,30 +1,30 @@
-import { useState, useEffect } from "react";
-import "./navbar.css";
+import { useState, useEffect } from 'react';
+import './navbar.css';
 
 function Navbar({
   selectorHome,
   setSelectorHome,
-  selectorProjects,
-  setSelectorProjects,
-  selectorDescription,
-  setSelectorDescription,
+  selectorMyRoute,
+  setSelectorMyRoute,
+  selectorMathle,
+  setSelectorMathle,
 }) {
   useEffect(() => {
-    console.log("selectorHome: ", selectorHome);
-    console.log("selectorProjects: ", selectorProjects);
-    console.log("selectorDescription: ", selectorDescription);
-  }, [selectorHome, selectorProjects, selectorDescription]);
+    console.log('selectorHome: ', selectorHome);
+    console.log('selectorProjects: ', selectorMyRoute);
+    console.log('selectorDescription: ', selectorMathle);
+  }, [selectorHome, selectorMyRoute, selectorMathle]);
 
   return (
     <>
-      <nav>
+      <nav className="nav">
         <article className="button-container">
           <button
             className="button-nav"
             onClick={() => {
               setSelectorHome(true);
-              setSelectorProjects(false);
-              setSelectorDescription(false);
+              setSelectorMyRoute(false);
+              setSelectorMathle(false);
             }}
           >
             Home
@@ -37,13 +37,13 @@ function Navbar({
             className="button-nav"
             onClick={() => {
               setSelectorHome(false);
-              setSelectorProjects(true);
-              setSelectorDescription(false);
+              setSelectorMyRoute(true);
+              setSelectorMathle(false);
             }}
           >
-            Projects
+            MyRoute
           </button>
-          {selectorProjects && <div className="selector"></div>}
+          {selectorMyRoute && <div className="selector"></div>}
         </article>
 
         <article className="button-container">
@@ -51,13 +51,13 @@ function Navbar({
             className="button-nav"
             onClick={() => {
               setSelectorHome(false);
-              setSelectorProjects(false);
-              setSelectorDescription(true);
+              setSelectorMyRoute(false);
+              setSelectorMathle(true);
             }}
           >
-            Description
+            Mathle
           </button>
-          {selectorDescription && <div className="selector"></div>}
+          {selectorMathle && <div className="selector"></div>}
         </article>
       </nav>
     </>
