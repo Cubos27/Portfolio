@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import RubikCube from './assets/rubikCube/rubikCube.jsx';
+// import RubikCube from './assets/rubikCube/rubikCube.jsx';
 import Navbar from './assets/navBar/navbar.jsx';
 import Home from './assets/mainComponents/home.jsx';
 import Mathle from './assets/mainComponents/Mathle.jsx';
@@ -21,7 +21,6 @@ function App() {
         selectorMathle={selectorMathle}
         setSelectorMathle={setSelectorMathle}
       />
-      <RubikCube />
 
       {selectorHome && <Home />}
 

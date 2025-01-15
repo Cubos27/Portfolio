@@ -1,5 +1,6 @@
 .nav {
   margin: 30px;
+  margin-top: 40px;
 }
 
 .button-nav {
@@ -27,4 +28,5 @@
 .button-container {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }

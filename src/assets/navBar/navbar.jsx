@@ -9,11 +9,11 @@ function Navbar({
   selectorMathle,
   setSelectorMathle,
 }) {
-  useEffect(() => {
-    console.log('selectorHome: ', selectorHome);
-    console.log('selectorProjects: ', selectorMyRoute);
-    console.log('selectorDescription: ', selectorMathle);
-  }, [selectorHome, selectorMyRoute, selectorMathle]);
+  // useEffect(() => {
+  //   console.log('selectorHome: ', selectorHome);
+  //   console.log('selectorProjects: ', selectorMyRoute);
+  //   console.log('selectorDescription: ', selectorMathle);
+  // }, [selectorHome, selectorMyRoute, selectorMathle]);
 
   return (
     <>

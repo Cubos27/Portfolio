@@ -1,6 +1,6 @@
 .container {
   position: fixed;
-  bottom: 30px;
+  bottom: 40px;
   left: 30px;
 }
 
@@ -12,4 +12,29 @@
 .description,
 .title {
   color: #bed9e9;
+}
+
+.description {
+  width: 500px;
+}
+
+.img-container {
+  position: fixed;
+  top: 15%;
+  left: 48%;
+}
+
+.img-container img {
+  border-radius: 16px;
+}
+
+.img-container-myroute {
+  position: fixed;
+  top: 5%;
+  left: 60%;
+}
+
+.img-container-myroute img {
+  max-height: 500px;
+  border-radius: 16px;
 }
