@@ -1,4 +1,5 @@
 import React from 'react';
+import mathleImage from '/projects/mathle_rush.jpeg'
 
 function Mathle() {
   return (
@@ -14,7 +15,7 @@ function Mathle() {
       </p>
 
       <div className="img-container">
-        <img src="/projects/mathle_rush.jpeg" alt="Not found" />
+        <img src={mathleImage} alt="Not found" />
       </div>
     </section>
   );
