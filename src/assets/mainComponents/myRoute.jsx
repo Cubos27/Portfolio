@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '/projects/mapa.jpg'
 
 function MyRoute() {
   return (
@@ -13,7 +14,7 @@ function MyRoute() {
       </p>
 
       <div className="img-container-myroute">
-        <img src="/projects/mapa.jpg" alt="Not found" />
+        <img src={img} alt="Not found" />
       </div>
     </section>
   );

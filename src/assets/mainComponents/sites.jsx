@@ -1,4 +1,5 @@
 import React from 'react'
+import video from '/projects/videoSites.mp4'
 
 function Sites() {
   return (
@@ -12,7 +13,7 @@ function Sites() {
 
       <div className="img-container">
         <video className="video" width={600} autoPlay muted loop>
-          <source src="/projects/videoSites.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video> 
         <p className='img-footer'>You can check its landing page here: <a className='link' href='https://littlesites.github.io/' target='_blank'>littlesites.github.io</a></p>
