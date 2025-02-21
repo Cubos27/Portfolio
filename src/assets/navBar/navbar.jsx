@@ -2,62 +2,50 @@ import { useState, useEffect } from 'react';
 import './navbar.css';
 
 function Navbar({
-  selectorHome,
-  setSelectorHome,
-  selectorMyRoute,
-  setSelectorMyRoute,
-  selectorMathle,
-  setSelectorMathle,
+  selectorNav,
+  setSelectorNav,
 }) {
-  // useEffect(() => {
-  //   console.log('selectorHome: ', selectorHome);
-  //   console.log('selectorProjects: ', selectorMyRoute);
-  //   console.log('selectorDescription: ', selectorMathle);
-  // }, [selectorHome, selectorMyRoute, selectorMathle]);
-
   return (
     <>
       <nav className="nav">
         <article className="button-container">
           <button
             className="button-nav"
-            onClick={() => {
-              setSelectorHome(true);
-              setSelectorMyRoute(false);
-              setSelectorMathle(false);
-            }}
+            onClick={() => { setSelectorNav('Home') }}
           >
             Home
           </button>
-          {selectorHome && <div className="selector"></div>}
+          {selectorNav === 'Home' && <div className="selector"></div>}
         </article>
 
         <article className="button-container">
           <button
             className="button-nav"
-            onClick={() => {
-              setSelectorHome(false);
-              setSelectorMyRoute(true);
-              setSelectorMathle(false);
-            }}
+            onClick={() => { setSelectorNav('MyRoute') }}
           >
             MyRoute
           </button>
-          {selectorMyRoute && <div className="selector"></div>}
+          {selectorNav === 'MyRoute' && <div className="selector"></div>}
         </article>
 
         <article className="button-container">
           <button
             className="button-nav"
-            onClick={() => {
-              setSelectorHome(false);
-              setSelectorMyRoute(false);
-              setSelectorMathle(true);
-            }}
+            onClick={() => { setSelectorNav('Mathle') }}
           >
             Mathle
           </button>
-          {selectorMathle && <div className="selector"></div>}
+          {selectorNav === 'Mathle' && <div className="selector"></div>}
+        </article>
+
+        <article className="button-container">
+          <button
+            className="button-nav"
+            onClick={() => { setSelectorNav('Sites') }}
+          >
+            Sites
+          </button>
+          {selectorNav === 'Sites' && <div className="selector"></div>}
         </article>
       </nav>
     </>

@@ -1,32 +1,30 @@
 import { useState } from 'react';
 import './App.css';
-// import RubikCube from './assets/rubikCube/rubikCube.jsx';
 import Navbar from './assets/navBar/navbar.jsx';
 import Home from './assets/mainComponents/home.jsx';
-import Mathle from './assets/mainComponents/Mathle.jsx';
+import Mathle from './assets/mainComponents/mathle.jsx';
 import MyRoute from './assets/mainComponents/myRoute.jsx';
+import Sites from './assets/mainComponents/sites.jsx';
 
 function App() {
-  const [selectorHome, setSelectorHome] = useState(true);
-  const [selectorMyRoute, setSelectorMyRoute] = useState(false);
-  const [selectorMathle, setSelectorMathle] = useState(false);
+  const [selectorNav, setSelectorNav] = useState('Home')
 
   return (
     <>
       <Navbar
-        selectorHome={selectorHome}
-        setSelectorHome={setSelectorHome}
-        selectorMyRoute={selectorMyRoute}
-        setSelectorMyRoute={setSelectorMyRoute}
-        selectorMathle={selectorMathle}
-        setSelectorMathle={setSelectorMathle}
+        selectorNav={selectorNav}
+        setSelectorNav={setSelectorNav}
       />
 
-      {selectorHome && <Home />}
+      {selectorNav === 'Home' && <Home />}
 
-      {selectorMyRoute && <MyRoute />}
+      {selectorNav === 'MyRoute' && <MyRoute />}
 
-      {selectorMathle && <Mathle />}
+      {selectorNav === 'Mathle' && <Mathle />}
+
+      {selectorNav === 'Sites' && <Sites />}
+
+      
     </>
   );
 }

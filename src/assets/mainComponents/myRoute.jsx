@@ -5,12 +5,15 @@ function MyRoute() {
     <section className="container">
       <h2 className="title">MyRoute</h2>
       <p className="description">
-        MyRoute is a school project I worked on, it is a mobile application that allows you to see
-        all the bus routes in Guadalajara in a map
+      I developed MyRoute as a school project. <br /><br />
+
+      A dynamic mobile application designed to revolutionize public transportation 
+      navigation in Guadalajara. The app integrates all city bus routes into an interactive, 
+      user-friendly map, empowering commuters to visualize real-time transit options.
       </p>
 
       <div className="img-container-myroute">
-        <img src="/public/projects/mapa.jpg" alt="Not found" />
+        <img src="/projects/mapa.jpg" alt="Not found" />
       </div>
     </section>
   );

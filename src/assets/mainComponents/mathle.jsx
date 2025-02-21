@@ -4,14 +4,17 @@ function Mathle() {
   return (
     <section className="container">
       <h2 className="title">Mathle</h2>
-      <p className="description">What is Mathle?</p>
       <p className="description">
-        Mathle is a school project that I worked on, it is a platform for studing mathemathics and
-        similar topics
+      What is Mathle? <br />
+      Mathle is an academic project I helped to design and develop. <br /><br />
+
+      An intuitive digital platform dedicated to transforming how students engage with mathematics and related disciplines. 
+      By offering interactive lessons, practice problems, and personalized learning tools, Mathle empowers users to master complex concepts 
+      at their own pace.
       </p>
 
       <div className="img-container">
-        <img src="/public/projects/mathle_rush.jpeg" alt="Not found" />
+        <img src="/projects/mathle_rush.jpeg" alt="Not found" />
       </div>
     </section>
   );
