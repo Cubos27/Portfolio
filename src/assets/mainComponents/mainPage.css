@@ -13,10 +13,12 @@
 .title,
 .img-footer {
   color: #bed9e9;
+  margin-right: 30px;
 }
 
 .description {
-  width: 500px;
+  /* width: 500px; */
+  max-width: 500px;
 }
 
 .img-footer {
@@ -67,4 +69,25 @@
 .img-container-myroute img {
   max-height: 80vh;
   border-radius: 16px;
+}
+
+@media screen and (max-width: 850px) {
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .img-container {
+      height: 1500px;
+      width: 5000px;
+      position: relative;
+    }
+
+  .img-container video,
+  .img-container img {
+    height: 1500px;
+    width: 5000px;
+  }
 }
