@@ -1,4 +1,4 @@
-import './css/mainPage.css';
+import './mainPage.css';
 import RubikCube from '../rubikCube/rubikCube';
 
 function Home() {

@@ -1,4 +1,4 @@
-import '../css/skills.css'
+import './skills.css'
 
 export const Experience = () => {
   const experience = [

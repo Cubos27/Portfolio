@@ -1,4 +1,4 @@
-import '../css/skills.css';
+import './skills.css';
 import { FaHtml5, FaCss3Alt, FaReact, FaJs, FaPython, FaJava } from "react-icons/fa";
 import { SiC } from "react-icons/si";
 
