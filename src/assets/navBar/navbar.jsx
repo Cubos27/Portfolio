@@ -1,4 +1,3 @@
-// import { useState, useEffect } from 'react';
 import './navbar.css';
 
 function Navbar({
@@ -26,6 +25,16 @@ function Navbar({
             Skills
           </button>
           {selectorNav === 'Skills' && <div className="selector"></div>}
+        </article>
+
+        <article className="button-container">
+          <button
+            className="button-nav"
+            onClick={() => { setSelectorNav('Projects') }}
+          >
+            Projects
+          </button>
+          {selectorNav === 'Projects' && <div className="selector"></div>}
         </article>
 
         {/* <article className="button-container"> */}

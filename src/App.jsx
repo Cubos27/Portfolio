@@ -2,10 +2,8 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './assets/navBar/navbar.jsx';
 import Home from './assets/mainComponents/home.jsx';
-// import Mathle from './assets/mainComponents/mathle.jsx';
-// import MyRoute from './assets/mainComponents/myRoute.jsx';
-// import Sites from './assets/mainComponents/sites.jsx';
 import Skills from './assets/mainComponents/skills.jsx';
+import { Projects } from './assets/mainComponents/projects.jsx';
 
 function App() {
   const [selectorNav, setSelectorNav] = useState('Home')
@@ -21,11 +19,7 @@ function App() {
 
       {selectorNav === 'Skills' && <Skills />}
 
-      {/* {selectorNav === 'MyRoute' && <MyRoute />} */}
-      {/**/}
-      {/* {selectorNav === 'Mathle' && <Mathle />} */}
-      {/**/}
-      {/* {selectorNav === 'Sites' && <Sites />} */}
+      {selectorNav === 'Projects' && <Projects />}
 
     </>
   );

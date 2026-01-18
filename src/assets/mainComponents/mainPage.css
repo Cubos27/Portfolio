@@ -1,7 +1,7 @@
 :root {
   --text-main: #bed9e9;
   --accent-blue: #1c99e1;
-  --bg-dark: #0f172a; /* Suggested background color if you don't have one */
+  --bg-dark: #0f172a;
   --tech-font: 'Fira Code', 'Roboto Mono', 'Courier New', monospace;
   --body-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -34,6 +34,16 @@ body {
     linear-gradient(rgba(28, 153, 225, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(28, 153, 225, 0.03) 1px, transparent 1px);
   background-size: 30px 30px;
+}
+
+.repos-container {
+  flex-direction: column;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
 }
 
 .description {
@@ -116,5 +126,9 @@ body {
 
   .img-footer {
     text-align: center;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
   }
 }
