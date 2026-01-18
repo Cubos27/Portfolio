@@ -20,8 +20,7 @@ body {
   overflow-x: hidden; /* Prevents scrollbar from animations */
 }
 
-/* --- MAIN LAYOUT WRAPPER --- */
-/* Replaces 'position: fixed' with a flexible full-screen layout */
+/* --- MAIN LAYOUT --- */
 .container {
   display: flex;
   align-items: center;
@@ -31,24 +30,22 @@ body {
   padding: 40px 60px;
   gap: 60px; /* Space between text and images */
   
-  /* Subtle Tech Background Grid (Optional) */
   background-image: 
     linear-gradient(rgba(28, 153, 225, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(28, 153, 225, 0.03) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
-/* --- TEXT SECTION (Left Side) --- */
 .description {
   flex: 1;
   max-width: 550px;
-  z-index: 2; /* Ensures text is clickable over background elements */
+  z-index: 2;
   animation: fadeIn 1s ease-out;
 }
 
 .title {
   font-family: var(--tech-font);
-  font-size: 3.5em; /* Larger, bolder */
+  font-size: 3.5em;
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--text-main);
@@ -58,7 +55,6 @@ body {
   text-shadow: 0 0 20px rgba(190, 217, 233, 0.1);
 }
 
-/* Add a blinking cursor effect if you want a terminal vibe */
 .title::after {
   content: '_';
   color: var(--accent-blue);
@@ -88,53 +84,6 @@ body {
   text-shadow: 0 0 8px rgba(28, 153, 225, 0.6);
 }
 
-/* --- IMAGE SECTION (Right Side) --- */
-/* Removed fixed positioning to allow natural flow */
-.img-container, 
-.img-container-myroute {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.img-container img,
-.img-container video,
-.img-container-myroute img {
-  max-width: 100%;
-  max-height: 70vh;
-  width: auto;
-  border-radius: 12px;
-  
-  /* Glassmorphism Border */
-  border: 1px solid rgba(190, 217, 233, 0.1);
-  box-shadow: 
-    0 20px 50px rgba(0, 0, 0, 0.5), /* Deep shadow */
-    0 0 0 1px rgba(28, 153, 225, 0.1); /* Subtle blue rim */
-    
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* Hover effect for image */
-.img-container img:hover,
-.img-container video:hover {
-  transform: scale(1.02);
-  box-shadow: 
-    0 30px 60px rgba(0, 0, 0, 0.6),
-    0 0 15px rgba(28, 153, 225, 0.2);
-}
-
-/* --- FOOTER (Inside Description) --- */
-.img-footer {
-  margin-top: 40px;
-  text-align: left;
-  font-size: 0.85em;
-  font-family: var(--tech-font);
-  opacity: 0.7;
-}
-
-/* --- ANIMATIONS --- */
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
@@ -145,7 +94,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- RESPONSIVE MOBILE DESIGN --- */
 @media screen and (max-width: 850px) {
   .container {
     flex-direction: column-reverse; /* Puts text below image on mobile, or remove '-reverse' to standard stack */
@@ -166,22 +114,6 @@ body {
     font-size: 2.2em;
   }
 
-  .img-container,
-  .img-container-myroute {
-    width: 100%;
-    height: auto;
-    position: static; /* Reset position */
-  }
-
-  /* Fixes the 5000px issue */
-  .img-container img,
-  .img-container video {
-    max-width: 100%;
-    max-height: 50vh; /* Don't take up whole mobile screen */
-    width: 100%;
-    object-fit: cover;
-  }
-  
   .img-footer {
     text-align: center;
   }

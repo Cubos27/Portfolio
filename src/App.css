@@ -1,3 +1,11 @@
+:root {
+  --text-main: #bed9e9;
+  --accent-blue: #1c99e1;
+  --bg-dark: #0f172a; /* Suggested background color if you don't have one */
+  --tech-font: 'Fira Code', 'Roboto Mono', 'Courier New', monospace;
+  --body-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
