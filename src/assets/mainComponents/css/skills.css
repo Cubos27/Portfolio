@@ -4,6 +4,20 @@
   --bar-bg: rgba(190, 217, 233, 0.2);
 }
 
+.expcard-container {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.expcard-container:last-child {
+  margin-bottom: 0;
+}
+
+.exp-place {
+  font-weight: bold;
+}
+
 .skills-container {
   width: 100%;
   max-width: 500px;
@@ -15,6 +29,15 @@
 
 .skill-item {
   margin-bottom: 20px;
+}
+
+.skill-item:hover .skill-icon {
+  color: var(--accent-blue);
+  transform: scale(1.2);
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
 }
 
 .skill-info {
@@ -32,15 +55,6 @@
   align-items: center;
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-}
-
-.skill-item:hover .skill-icon {
-  color: var(--accent-blue);
-  transform: scale(1.2);
-}
-
-.skill-item:last-child {
-  margin-bottom: 0;
 }
 
 .skill-name {
