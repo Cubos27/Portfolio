@@ -10,7 +10,7 @@ function ProjectCard({ name, url, description, defaultBranch }) {
       </a>
       <div className='content'>
         <p className="repo-desc">{description}</p>
-        <img src={imageUrl} alt={name} className="repo-img" />
+        <img src={imageUrl} alt='' className="repo-img" />
       </div>
     </div>
   )
