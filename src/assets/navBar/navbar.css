@@ -1,6 +1,15 @@
 .nav {
-  margin: 30px;
-  margin-top: 40px;
+  position: fixed; /* Sticks it to the viewport */
+  top: 40px;       /* Distance from top */
+  left: 40px;      /* Distance from left */
+  z-index: 1000;   /* Ensures it floats ABOVE the content */
+  
+  display: flex;
+  flex-direction: column; /* Vertical list */
+  gap: 15px;       /* Space between buttons */
+  
+  /* Remove any old margins you had! */
+  margin: 0; 
 }
 
 .button-nav {

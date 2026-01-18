@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import './navbar.css';
 
 function Navbar({
@@ -21,32 +21,42 @@ function Navbar({
         <article className="button-container">
           <button
             className="button-nav"
-            onClick={() => { setSelectorNav('MyRoute') }}
+            onClick={() => { setSelectorNav('Skills') }}
           >
-            MyRoute
+            Skills
           </button>
-          {selectorNav === 'MyRoute' && <div className="selector"></div>}
+          {selectorNav === 'Skills' && <div className="selector"></div>}
         </article>
 
-        <article className="button-container">
-          <button
-            className="button-nav"
-            onClick={() => { setSelectorNav('Mathle') }}
-          >
-            Mathle
-          </button>
-          {selectorNav === 'Mathle' && <div className="selector"></div>}
-        </article>
+        {/* <article className="button-container"> */}
+        {/*   <button */}
+        {/*     className="button-nav" */}
+        {/*     onClick={() => { setSelectorNav('MyRoute') }} */}
+        {/*   > */}
+        {/*     MyRoute */}
+        {/*   </button> */}
+        {/*   {selectorNav === 'MyRoute' && <div className="selector"></div>} */}
+        {/* </article> */}
 
-        <article className="button-container">
-          <button
-            className="button-nav"
-            onClick={() => { setSelectorNav('Sites') }}
-          >
-            Sites
-          </button>
-          {selectorNav === 'Sites' && <div className="selector"></div>}
-        </article>
+        {/* <article className="button-container"> */}
+        {/*   <button */}
+        {/*     className="button-nav" */}
+        {/*     onClick={() => { setSelectorNav('Mathle') }} */}
+        {/*   > */}
+        {/*     Mathle */}
+        {/*   </button> */}
+        {/*   {selectorNav === 'Mathle' && <div className="selector"></div>} */}
+        {/* </article> */}
+
+        {/* <article className="button-container"> */}
+        {/*   <button */}
+        {/*     className="button-nav" */}
+        {/*     onClick={() => { setSelectorNav('Sites') }} */}
+        {/*   > */}
+        {/*     Sites */}
+        {/*   </button> */}
+        {/*   {selectorNav === 'Sites' && <div className="selector"></div>} */}
+        {/* </article> */}
       </nav>
     </>
   );
